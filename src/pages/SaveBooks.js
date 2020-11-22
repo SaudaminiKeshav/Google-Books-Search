@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Jumbotron from "../components/Jumbotron";
-import { Container, Row, Col } from "../components/Grid";
+import { Container} from "../components/Grid";
 import SavedResult from "../components/SavedResult"
-
-
 
 class SaveBook extends Component {
     state = {
@@ -27,14 +25,11 @@ class SaveBook extends Component {
 
     render() {
         return (
-            <Container fluid>
-                <Jumbotron>
-                    <h1 className="text-white">SAVED BOOKS</h1>
-                </Jumbotron>
+            <Container fluid className="container">
+                <Jumbotron />
                 <Container>
                     <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
                 </Container>
-
             </Container>
         )
     }
@@ -42,4 +37,4 @@ class SaveBook extends Component {
 
 
 
-export default SaveBook  
+export default SaveBook 
