@@ -34,5 +34,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "### Overview",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaudaminiKeshav/Google-Books-Search.git"
+  },
+  "author": "Saudamini Keshav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaudaminiKeshav/Google-Books-Search/issues"
+  },
+  "homepage": "https://github.com/SaudaminiKeshav/Google-Books-Search#readme"
 }
