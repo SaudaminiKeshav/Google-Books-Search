@@ -5,7 +5,7 @@ const SearchForm = props => {
     return (
         <form>
             <div className="form-group">
-                <label className="BookSearchLabel">Search For Book</label>
+                <label className="BookSearchLabel">Search For Book:</label>
                 <br></br>
                 <input className="col-12 form-control"
                     value={props.search}

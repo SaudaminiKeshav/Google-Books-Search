@@ -39,7 +39,7 @@ class SearchBooks extends Component {
                         return book;
                     })
                     this.setState({ results: results, error: "" })
-                } 
+                }
             })
             .catch(err => this.setState({ error: err.items }));
     }
