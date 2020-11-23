@@ -11,17 +11,28 @@ import Saved from "./pages/Saved";
 import "./App.css";
 
 class App extends Component {
- 
+  constructor(props) {
+    super(props);
+    this.handleBookSelection = this.handleBookSelectionChange.bind(this);
+    this.state = {
+      books: []
+  };
+  }
+
+  handleBookSelectionChange(bookSaved) {
+    console.log(bookSaved);
+    this.setState({books: bookSaved})
+  }
+
   render() {
     return (
       <Router>
         <div>
-          <NavBar />
           <Header />
           <Wrapper>
             <Route exact path="/" component={Search} />
             <Route exact path="/search" component={Search} />
-            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/saved" component={Saved} books={this.state.books} onSelectionChange={this.handleBookSelectionChange.bind(this)}/>
             <Route exact path="/noMatch" component={NoMatch} />
           </Wrapper>
         </div>
